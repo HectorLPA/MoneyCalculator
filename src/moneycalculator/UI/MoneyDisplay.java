@@ -1,5 +1,5 @@
 
-package UI;
+package moneycalculator.UI;
 
 import moneycalculator.Model.Money;
 

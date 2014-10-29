@@ -1,4 +1,4 @@
-package Application;
+package moneycalculator.Application;
 
 import moneycalculator.Model.Currency;
 

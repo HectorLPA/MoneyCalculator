@@ -1,5 +1,5 @@
 
-package Persistence;
+package moneycalculator.Persistence;
 
 
 public class CurrencySetLoader {

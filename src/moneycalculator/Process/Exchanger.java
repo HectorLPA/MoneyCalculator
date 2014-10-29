@@ -1,5 +1,5 @@
 
-package Process;
+package moneycalculator.Process;
 
 import moneycalculator.Model.ExchangeRate;
 import moneycalculator.Model.Money;

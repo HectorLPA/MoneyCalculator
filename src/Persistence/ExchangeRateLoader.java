@@ -1,5 +1,5 @@
 
-package moneycalculator.View;
+package Persistence;
 
 
 public class ExchangeRateLoader {

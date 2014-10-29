@@ -1,5 +1,5 @@
 
-package moneycalculator.View;
+package UI;
 
 public class ExchangeDialog {
 

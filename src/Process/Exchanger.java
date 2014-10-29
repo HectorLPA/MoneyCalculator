@@ -1,7 +1,9 @@
 
-package moneycalculator.View;
+package Process;
 
 import moneycalculator.Model.ExchangeRate;
+import moneycalculator.Model.Money;
+
 
 public class Exchanger {
 

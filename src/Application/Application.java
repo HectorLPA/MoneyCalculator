@@ -1,6 +1,8 @@
-package moneycalculator.Model;
+package Application;
 
-public class MoneyCalculator {
+import moneycalculator.Model.Currency;
+
+public class Application {
     
     public static void main(String[] args) {
         Currency myCurrency;

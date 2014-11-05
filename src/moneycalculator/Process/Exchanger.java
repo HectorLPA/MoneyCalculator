@@ -6,9 +6,9 @@ import moneycalculator.Model.Money;
 
 
 public class Exchanger {
-
+    
     public Money exchange(Money money,ExchangeRate rate){
-        return money;
+        return new Money(200,);
     }
     
     

@@ -63,6 +63,7 @@ public class MyNumber {
         return result;
     }
 
+    
     public MyNumber div(MyNumber number) {
         MyNumber result = new MyNumber(0, 0);
         result.setDenominator(this.denominator * number.getNumerator());

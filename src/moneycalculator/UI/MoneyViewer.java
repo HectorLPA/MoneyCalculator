@@ -1,6 +1,5 @@
 package moneycalculator.UI;
 
-
 import moneycalculator.Model.Money;
 
 public class MoneyViewer {

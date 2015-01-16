@@ -3,8 +3,6 @@ package moneycalculator.Model;
 
 import java.util.HashSet;
 import java.util.Set;
-
-
 import java.util.*;
 
 public class CurrencySet extends HashSet<Currency> {

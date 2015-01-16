@@ -2,6 +2,7 @@
 package moneycalculator.Persistence;
 
 
+
 import moneycalculator.Model.Currency;
 import moneycalculator.Model.ExchangeRate;
 import moneycalculator.Model.MyNumber;

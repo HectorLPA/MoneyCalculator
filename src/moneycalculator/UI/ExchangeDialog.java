@@ -9,7 +9,6 @@ import java.util.logging.Logger;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-
 public class ExchangeDialog implements CurrencyDialog {
 
     private Currency currency;

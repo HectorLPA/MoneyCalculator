@@ -4,6 +4,7 @@ import java.util.Calendar;
 
 public class ExchangeRate {
 
+    
     private Currency fromCurrency;
     private Currency toCurrency;
     private Calendar date;

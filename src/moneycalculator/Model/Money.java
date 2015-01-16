@@ -2,6 +2,7 @@ package moneycalculator.Model;
 
 public class Money {
 
+    
     private final MyNumber amount;
     private final Currency currency;
 

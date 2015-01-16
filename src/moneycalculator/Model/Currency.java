@@ -1,6 +1,7 @@
 package moneycalculator.Model;
 
 public class Currency {
+  
     private final String code;
     private final String symbol;
     private final String name;

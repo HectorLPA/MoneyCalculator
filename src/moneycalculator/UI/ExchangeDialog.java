@@ -1,24 +1,40 @@
 
 package moneycalculator.UI;
 
-import java.util.Date;
 import moneycalculator.Model.Currency;
 import moneycalculator.Model.CurrencySet;
-import moneycalculator.Model.Exchange;
-import moneycalculator.Model.Money;
+import java.io.BufferedReader;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-public class ExchangeDialog {
-    private final CurrencySet currencySet;
-    private final Exchange exchange;
-    
-    public ExchangeDialog(CurrencySet currencySet){
-        this.currencySet=currencySet;
+
+public class ExchangeDialog implements CurrencyDialog {
+
+    private Currency currency;
+
+    @Override
+    public void execute() {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        while (currency == null) {
+            System.out.println("Insert currency code: ");
+            String code = null;
+            try {
+                code = reader.readLine();
+            } catch (IOException ex) {
+                Logger.getLogger(ExchangeDialog.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            currency = this.searchCurrency(code);
+        }
     }
-    public Exchange getExchange(){
-        return this.exchange;
+
+    private Currency searchCurrency(String code) {
+        return CurrencySet.getInstance().get(code);
     }
-    public void execute(){
-        Exchange exchange= new Exchange(null, null,null);
-        
+
+    @Override
+    public Currency getCurrency() {
+        return this.currency;
     }
 }
